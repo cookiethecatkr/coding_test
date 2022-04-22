@@ -1,0 +1,10 @@
+static int[] solutions(int[] A, int k){
+        int [] B = new int[A.length];
+        
+        for(int i=0; i<A.length; i++){
+            int rotatedIndex = (i + k) % A.length;
+
+            B[rotatedIndex] = A[i];
+        }
+        return B;
+    }
